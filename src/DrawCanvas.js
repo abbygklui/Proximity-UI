@@ -9,6 +9,9 @@ const DrawCanvas = () => {
   const startDrawing = ({ nativeEvent }) => {
     const { offsetX, offsetY } = nativeEvent;
     setIsDrawing(true);
+    const context = canvasRef.current.getContext('2d');
+    context.beginPath();
+    context.moveTo(offsetX, offsetY);
     setPositions([{ x: offsetX, y: offsetY }]);
   };
 
@@ -19,12 +22,8 @@ const DrawCanvas = () => {
     setPositions((prevPositions) => [...prevPositions, newPos]);
     console.log(newPos);  // Log the position
     const context = canvasRef.current.getContext('2d');
-    context.strokeStyle = 'black';
-    context.lineWidth = 2;
     context.lineTo(offsetX, offsetY);
     context.stroke();
-    context.beginPath();
-    context.moveTo(offsetX, offsetY);
   };
 
   const stopDrawing = () => {
