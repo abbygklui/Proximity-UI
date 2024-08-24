@@ -2,7 +2,9 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import List from './components/List';
 import Card from './components/Card';
+import Sensor from 'Sensor';
 import './App.css';
+
 
 function App() {
 
@@ -34,7 +36,7 @@ function App() {
           <div class="row">
             <div class="col-md-8">
               <h1>This kind of public transportation is growing</h1>
-              {/* <h2>Also: How Tim Hortons should fill your reusable cup</h2> */}
+              <h2>Also: How Tim Hortons should fill your reusable cup</h2>
               <p>CBC News · Posted: Jul 11, 2024 12:40 PM EDT | Last Updated: July 12</p>
               <img src="https://ipsf.net/wp-content/uploads/2021/12/dummy-image-square.webp" />
               <p>Fewer Canadians have been using public buses and trains since the pandemic. But one new type of public transportation is seeing huge growth in cities across Canada — bike sharing.
@@ -58,10 +60,9 @@ function App() {
                 "I like going for a bike ride better than sitting in a crowded streetcar," said Jake Roslyn, who said he is a "huge fan" of Bike Share Toronto and used it regularly when he lived downtown.
 
                 Hanna said it's the most affordable way to travel the city (besides walking), and often faster than driving, especially now that e-bikes have been added to the fleet. Annual memberships start at $105, and there are also day pass, pay-as-you-go options, and discounts for low-income users.</p>
-            </div>
-            <div class="col-md-1"></div>
+            </div>\
             <div class="col-md-3">
-              <h5>Top Stories of the Day</h5>
+              <h3>Top Stories of the Day</h3>
               <List articles={topStories} />
             </div>
           </div>
