@@ -55,12 +55,12 @@ void loop() {
   cm = microsecondsToCentimeters(duration);
 
   Serial.print(inches);
-  Serial.print("in, ");
-  Serial.print(cm);
-  Serial.print("cm");
+//  Serial.print("in, ");
+//  Serial.print(cm);
+//  Serial.print("cm");
   Serial.println();
 
-  delay(100);
+  delay(300);
 }
 
 long microsecondsToInches(long microseconds) {
