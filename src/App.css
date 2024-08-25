@@ -97,7 +97,7 @@ h5 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.32);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   z-index: 1;
@@ -138,9 +138,9 @@ h5 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px); 
+  background-color: rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(30px); 
   z-index: 1;
   border-radius: 24px; 
 }
@@ -166,9 +166,7 @@ h5 {
   border-radius: 24px;
   width: 100%;
   height: 100%;
-  opacity: 0.4;
-  color: rgba(0, 0, 0, 0.4);
-  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.5;
 }
 
 .low-data .list-item p {
@@ -178,8 +176,8 @@ h5 {
   position: absolute;
   text-align: left;
   color: white;
-  padding: 60px;
-  font-weight: 600;
+  padding: 40px;
+  font-weight: 500;
 }
 
 

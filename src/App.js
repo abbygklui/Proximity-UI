@@ -33,17 +33,17 @@ function App() {
 
   const topStories = [
     {
-      title: "Forest Fires Surge Across the Globe",
+      title: "Can Managed Forests Provide Sustainable Resources ",
       image: "https://t3.ftcdn.net/jpg/06/76/17/50/360_F_676175047_ZdJDBYHhQJOSooTjU28r1ZxMMtN8Cfyt.jpg",
       link: "#"
     },
     {
-      title: "Why do people love living in Canada?",
+      title: "Canada: Stunning Landscapes and High Quality of Life",
       image: "https://assets.vogue.com/photos/64f74083b1a282ee4e251e12/master/w_2560%2Cc_limit/GettyImages-1132328470.jpg",
       link: "#"
     },
     {
-      title: "SpaceX's astronauts return to space next year",
+      title: "SpaceX Astronauts Set to Return to Space Next Year",
       image: "https://www.reuters.com/resizer/v2/GENHKN5WNRKUFOAOSSRQMQEZAA.jpg?auth=64184e099bafdb46ace02dd3abbab2b102895c1d8e3288bdf05d17e07922cb9c&width=1080&quality=80",
       link: "#"
     },
