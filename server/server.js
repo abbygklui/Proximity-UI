@@ -37,8 +37,26 @@ const io = require('socket.io')(server, {
     }
 });
 
+let dataBuffer = [];
+const bufferLimit = 5; // Number of data points to collect before emitting
+const emitInterval = 2000; // Emit buffered data every 2 seconds
+
 io.on('connection', (socket) => {
-    console.log('Node is listening to port');
+    console.log('Client connected');
+
+    const emitBufferedData = setInterval(() => {
+        if (dataBuffer.length > 0) {
+            const average = dataBuffer.reduce((acc, val) => acc + val, 0) / dataBuffer.length;
+            console.log('Emitting buffered data:', average);
+            io.emit('data', average);
+            dataBuffer = [];
+        }
+    }, emitInterval);
+
+    socket.on('disconnect', () => {
+        clearInterval(emitBufferedData);
+        console.log('Client disconnected');
+    });
 });
 
 parser.on('data', (data) => {

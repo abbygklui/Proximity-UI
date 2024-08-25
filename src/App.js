@@ -8,7 +8,6 @@ import './App.css';
 
 function App() {
 
-  const [isCompVisible, setIsCompVisible] = useState(true);
   const [isLowData, setIsLowData] = useState(false);
   useEffect(() => {
     const socket = io('http://localhost:4000');
@@ -16,11 +15,9 @@ function App() {
     socket.on('data', function (data) {
       console.log('Data received:', data);
 
-      if (parseInt(data) < 63) {
-        setIsCompVisible(false); // Hide navbar if data is under 50
+      if (parseInt(data) < 100) {
         setIsLowData(true);
       } else {
-        setIsCompVisible(true); // Show navbar if data is 50 or more
         setIsLowData(false);
       }
 
