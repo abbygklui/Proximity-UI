@@ -1,28 +1,41 @@
 .list-item {
   display: flex;
-  align-items: center; 
+  align-items: center;
   margin-bottom: 15px;
   padding: 10px;
   border-bottom: 1px solid #ddd;
+  transition: background-image 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
+
+
 .list-item-image {
-  width: 100px;
+  width: 130px;
   height: 100px;
   object-fit: cover;
   border-radius: 8px;
   margin-right: 15px;
 }
 
+.list-item.background-image {
+  background-size: cover;
+  background-position: center;
+  color: white; 
+}
+
+
 .list-item-content {
   flex: 1;
 }
 
 .list-item-title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #555;
 }
 
 .list-item-title:hover {
   color: grey;
 }
+

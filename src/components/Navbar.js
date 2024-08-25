@@ -12,7 +12,7 @@ const Navbar = () => {
 
         <div class="navbar-collapse collapse">
           <ul class="navbar-nav mr-auto w-100 clearfix">
-            <li className="navbar-item"><a href="#home">Top Stories</a></li>
+            <li className="navbar-item"><a href="#home"><h5>WebNews</h5></a></li>
             <li className="navbar-item"><a href="#about">Local</a></li>
             <li className="navbar-item"><a href="#contact">Climate</a></li>
             <li className="navbar-item"><a href="#home">World</a></li>
@@ -20,7 +20,7 @@ const Navbar = () => {
             <li className="navbar-item"><a href="#contact">Local</a></li></ul>
         </div>
       </div>
-    </nav>
+    </nav >
   );
 };
 
